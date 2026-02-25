@@ -10,6 +10,11 @@ document.getElementById('btnPlay').addEventListener('click', () => {
 
 document.getElementById('btnPause').addEventListener('click', () => {
   player.pause();
+
+document.getElementById('btnStop').addEventListener('click', () => {
+  player.pause();
+  player.currentTime(0);
+});
 });
 });
 
