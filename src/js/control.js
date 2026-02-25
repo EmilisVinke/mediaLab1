@@ -7,5 +7,9 @@ player.src({
 
 document.getElementById('btnPlay').addEventListener('click', () => {
   player.play();
+
+document.getElementById('btnPause').addEventListener('click', () => {
+  player.pause();
+});
 });
 
