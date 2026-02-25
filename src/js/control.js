@@ -7,14 +7,24 @@ player.src({
 
 document.getElementById('btnPlay').addEventListener('click', () => {
   player.play();
+});
 
 document.getElementById('btnPause').addEventListener('click', () => {
   player.pause();
+});
 
 document.getElementById('btnStop').addEventListener('click', () => {
   player.pause();
   player.currentTime(0);
 });
+
+document.getElementById('btnFwd').addEventListener('click', () => {
+  player.currentTime((player.currentTime() || 0) + 5);
 });
+
+document.getElementById('btnBack').addEventListener('click', () => {
+  const current = player.currentTime() || 0;
+  const newTime = current - 5;
+  player.currentTime(newTime < 0 ? 0 : newTime);
 });
 
