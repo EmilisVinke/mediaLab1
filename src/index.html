@@ -36,9 +36,15 @@
 	
 	<p>Playlist</p>
 	
-	<input type="text" name="url1" size="100" value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"><button type="button">Load</button><br>
-	<input type="text" name="url2" size="100" value="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8"><button type="button">Load</button><br>
-	<button type="button">Shuffle</button>
+<input id="url1" type="text" size="100"
+  value="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8">
+<button id="load1" type="button">Load</button>
+
+<input id="url2" type="text" size="100"
+  value="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8">
+<button id="load2" type="button">Load</button>
+
+	<button id="btnShuffle" type="button">Shuffle</button>
 
   <script src="js/video.min.js"></script>
   <script src="js/control.js"></script>
